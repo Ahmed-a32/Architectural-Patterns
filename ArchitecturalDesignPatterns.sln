@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26711.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalDesignPatterns", "ArchitecturalDesignPatterns\ArchitecturalDesignPatterns.csproj", "{0325DF15-0AE8-4C49-AF88-79E805F50103}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommunicationPatterns", "CommunicationPatterns", "{8BB037B8-E567-4C75-9A2F-5B4DE3AD212C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIDefinition", "APIDefinition", "{4411C32D-934C-4482-9B66-2A5DA4CD9F82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grpc", "grpc", "{05474462-A6CE-4E1F-A191-80895D63CFC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greeter", "CommunicationPatterns\grpchelloworld\Greeter\Greeter.csproj", "{724DFC8C-4B57-4C3F-811C-0463BE2A2829}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterServer", "CommunicationPatterns\grpchelloworld\GreeterServer\GreeterServer.csproj", "{A7706C84-92D2-4B7A-B779-76B64D2950EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterClient", "CommunicationPatterns\grpchelloworld\GreeterClient\GreeterClient.csproj", "{ACCF4597-3748-4117-8633-1CB767F8CCC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +21,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0325DF15-0AE8-4C49-AF88-79E805F50103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0325DF15-0AE8-4C49-AF88-79E805F50103}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0325DF15-0AE8-4C49-AF88-79E805F50103}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0325DF15-0AE8-4C49-AF88-79E805F50103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724DFC8C-4B57-4C3F-811C-0463BE2A2829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724DFC8C-4B57-4C3F-811C-0463BE2A2829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724DFC8C-4B57-4C3F-811C-0463BE2A2829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724DFC8C-4B57-4C3F-811C-0463BE2A2829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7706C84-92D2-4B7A-B779-76B64D2950EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7706C84-92D2-4B7A-B779-76B64D2950EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7706C84-92D2-4B7A-B779-76B64D2950EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7706C84-92D2-4B7A-B779-76B64D2950EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4411C32D-934C-4482-9B66-2A5DA4CD9F82} = {8BB037B8-E567-4C75-9A2F-5B4DE3AD212C}
+		{05474462-A6CE-4E1F-A191-80895D63CFC4} = {4411C32D-934C-4482-9B66-2A5DA4CD9F82}
+		{724DFC8C-4B57-4C3F-811C-0463BE2A2829} = {05474462-A6CE-4E1F-A191-80895D63CFC4}
+		{A7706C84-92D2-4B7A-B779-76B64D2950EC} = {05474462-A6CE-4E1F-A191-80895D63CFC4}
+		{ACCF4597-3748-4117-8633-1CB767F8CCC3} = {05474462-A6CE-4E1F-A191-80895D63CFC4}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3735870-EF7F-4BFF-AA97-667338FDCC20}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Greeter\Greeter.csproj
 	EndGlobalSection
 EndGlobal
