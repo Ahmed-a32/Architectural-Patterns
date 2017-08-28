@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterServer", "Communicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterClient", "CommunicationPatterns\grpchelloworld\GreeterClient\GreeterClient.csproj", "{ACCF4597-3748-4117-8633-1CB767F8CCC3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "swagger", "swagger", "{10426D9A-1A4C-4D71-9BE1-1FE084968CD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "swagger", "CommunicationPatterns\swagger\swagger.csproj", "{FF0C544B-1B53-4732-B1F5-E0A0BA602F83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACCF4597-3748-4117-8633-1CB767F8CCC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0C544B-1B53-4732-B1F5-E0A0BA602F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0C544B-1B53-4732-B1F5-E0A0BA602F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0C544B-1B53-4732-B1F5-E0A0BA602F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0C544B-1B53-4732-B1F5-E0A0BA602F83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,8 @@ Global
 		{724DFC8C-4B57-4C3F-811C-0463BE2A2829} = {05474462-A6CE-4E1F-A191-80895D63CFC4}
 		{A7706C84-92D2-4B7A-B779-76B64D2950EC} = {05474462-A6CE-4E1F-A191-80895D63CFC4}
 		{ACCF4597-3748-4117-8633-1CB767F8CCC3} = {05474462-A6CE-4E1F-A191-80895D63CFC4}
+		{10426D9A-1A4C-4D71-9BE1-1FE084968CD6} = {4411C32D-934C-4482-9B66-2A5DA4CD9F82}
+		{FF0C544B-1B53-4732-B1F5-E0A0BA602F83} = {10426D9A-1A4C-4D71-9BE1-1FE084968CD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3735870-EF7F-4BFF-AA97-667338FDCC20}
