@@ -31,7 +31,7 @@ namespace MT.ServiceBus.Server
                         TokenScope.Namespace);
                 });
 
-                sbc.ReceiveEndpoint(host, ConfigurationManager.AppSettings["ServiceQueueName"], e =>
+                sbc.ReceiveEndpoint(host, ConfigurationManager.AppSettings["ServiceBusQueueName"], e =>
                 {
                     // Configure your consumer(s)
                     e.Handler<RegistrationMessage>(context =>
