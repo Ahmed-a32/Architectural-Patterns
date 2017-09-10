@@ -41,6 +41,15 @@ namespace MT.ServiceBus.Server
                     e.DefaultMessageTimeToLive = TimeSpan.FromMinutes(1);
                 });
             });
+
+            bus.Start();
+
+            bus.Publish(new RegistrationMessage { ParticipantName = "SelfTest", Email = "self@test.com" });
+
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+
+            bus.Stop();
         }
     }
 }

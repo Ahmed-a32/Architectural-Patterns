@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Contracts\MT.Hello.Contracts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
 </Project>
