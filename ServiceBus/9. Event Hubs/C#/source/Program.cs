@@ -12,6 +12,9 @@ namespace Microsoft.ServiceBus.Samples
 
     class Program
     {
+        private const string EVENT_HUB_NAME = "mspatterns2017";
+        private const int NUMBER_OF_MESSAGES = 10;
+        private const int NUMBER_OF_PARTITIONS = 5;
         #region Fields
 
         static string eventHubName;
@@ -22,7 +25,12 @@ namespace Microsoft.ServiceBus.Samples
         static void Main(string[] args)
         {
             //Initialize
-            ParseArgs(args);
+            //ParseArgs(args);
+
+            eventHubName = EVENT_HUB_NAME;
+            numberOfMessages = NUMBER_OF_MESSAGES;
+            numberOfPartitions = NUMBER_OF_PARTITIONS;
+
             string connectionString = GetServiceBusConnectionString();
             NamespaceManager namespaceManager = NamespaceManager.CreateFromConnectionString(connectionString);
             
